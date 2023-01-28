@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat-Dog</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <b>Name</b>
+        <input type="text" class="input1" id="put1" placeholder="Name">
+        <b style="margin-left: 180px;">Filter</b>
+        <select name="All" class="filter-handle" id="sl" onchange="fan()">
+            <option value="">All</option>
+            <option value="Dog">Dog</option>
+            <option value="Cat">Cat</option>
+        </select>
+        <br><br>
+        <b>Age</b>
+        <input type="number" class="input2" id="put2" placeholder="Age"><br><br>
+        <b>Category</b>
+        <select name="Select" id="slc1">
+            <option value="Select">Select</option>
+        </select><br><br>
+        <b>Breed</b>
+        <select name="Select" id="slc2">
+            <option value="Choose">Choose</option>
+        </select><br><br>
+        <b>Gender</b>
+        <input type="radio" name="gender" id="put3" value="Male"> <b>Male</b>
+        <input type="radio" name="gender" id="put4" value="Female"> <b>Female</b>
+    </div>
+    </div>
+    <div class="container"> <button onclick="func()">Submit</button> </div>
+    <table id="tab"></table>
+<script src="index.js"></script>
+</body>
+
+</html>
